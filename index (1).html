@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Aigerim Turgunbaeva — Independent journalist covering media repression, human rights, and press freedom in Central Asia.">
+    <title>Aigerim Turgunbaeva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__inner">
+            <a href="#" class="header__logo" aria-label="Home"></a>
+            <nav class="header__nav" id="nav">
+                <a href="#about" class="header__nav-link">About</a>
+
+                <a href="#media" class="header__nav-link">Media</a>
+                <a href="#contact" class="header__nav-link">Contact</a>
+            </nav>
+            <button class="header__menu-btn" id="menuBtn" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <!-- LEFT HERO ORNAMENT: Traditional Kyrgyz ethno pattern -->
+        <div class="hero-ornament hero-ornament--left" aria-hidden="true">
+            <svg viewBox="0 0 80 800" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
+                <!-- Top spiral sun (from reference) -->
+                <circle cx="40" cy="40" r="18" stroke-width="2.5" />
+                <path d="M 40 40 Q 37 37 34 40 Q 34 43 37 46 Q 40 46 43 43 Q 43 40 40 40" fill="currentColor"
+                    stroke-width="2" />
+                <!-- Radiating lines -->
+                <line x1="40" y1="22" x2="40" y2="12" stroke-width="2.5" />
+                <line x1="40" y1="58" x2="40" y2="68" stroke-width="2.5" />
+                <line x1="22" y1="40" x2="12" y2="40" stroke-width="2.5" />
+                <line x1="58" y1="40" x2="68" y2="40" stroke-width="2.5" />
+                <line x1="28" y1="28" x2="20" y2="20" stroke-width="2.2" />
+                <line x1="52" y1="28" x2="60" y2="20" stroke-width="2.2" />
+                <line x1="28" y1="52" x2="20" y2="60" stroke-width="2.2" />
+                <line x1="52" y1="52" x2="60" y2="60" stroke-width="2.2" />
+                <circle cx="40" cy="12" r="2" fill="currentColor" />
+                <circle cx="68" cy="40" r="2" fill="currentColor" />
+                <circle cx="40" cy="68" r="2" fill="currentColor" />
+                <circle cx="12" cy="40" r="2" fill="currentColor" />
+
+                <!-- Circular motif with scrolls -->
+                <circle cx="40" cy="130" r="16" stroke-width="2.5" />
+                <circle cx="40" cy="130" r="10" stroke-width="2" />
+                <path d="M 28 130 Q 24 124 28 120" stroke-width="2.2" stroke-linecap="round" />
+                <path d="M 52 130 Q 56 124 52 120" stroke-width="2.2" stroke-linecap="round" />
+                <path d="M 28 130 Q 24 136 28 140" stroke-width="2.2" stroke-linecap="round" />
+                <path d="M 52 130 Q 56 136 52 140" stroke-width="2.2" stroke-linecap="round" />
+                <circle cx="40" cy="130" r="3" fill="currentColor" />
+
+                <!-- Heart-scroll motif -->
+                <path d="M 40 180 Q 32 173 24 178 Q 20 184 24 192 Q 30 198 40 208" stroke-width="2.5"
+                    stroke-linecap="round" />
+                <path d="M 40 180 Q 48 173 56 178 Q 60 184 56 192 Q 50 198 40 208" stroke-width="2.5"
+                    stroke-linecap="round" />
+                <circle cx="28" cy="182" r="2" fill="currentColor" />
+                <circle cx="52" cy="182" r="2" fill="currentColor" />
+
+                <!-- Diamond with cross -->
+                <path d="M 40 250 L 52 265 L 40 280 L 28 265 Z" stroke-width="2.5" />
+                <line x1="40" y1="250" x2="40" y2="280" stroke-width="2" />
+                <line x1="28" y1="265" x2="52" y2="265" stroke-width="2" />
+                <circle cx="40" cy="265" r="3" fill="currentColor" />
+
+                <!-- S-scroll pattern -->
+                <path d="M 24 330 Q 18 322 22 315 Q 28 312 34 318 Q 36 326 30 333" stroke-width="2.5"
+                    stroke-linecap="round" />
+                <path d="M 56 330 Q 62 322 58 315 Q 52 312 46 318 Q 44 326 50 333" stroke-width="2.5"
+                    stroke-linecap="round" />
+                <circle cx="30" cy="315" r="1.8" fill="currentColor" />
+                <circle cx="50" cy="315" r="1.8" fill="currentColor" />
+
+                <!-- Central rosette -->
+                <circle cx="40" cy="390" r="20" stroke-width="2.5" />
+                <circle cx="40" cy="390" r="14" stroke-width="2" />
+                <circle cx="40" cy="390" r="8" stroke-width="1.8" />
+                <!-- Cross inside -->
+                <line x1="40" y1="374" x2="40" y2="406" stroke-width="2" />
+                <line x1="24" y1="390" x2="56" y2="390" stroke-width="2" />
+                <!-- S-scrolls at corners -->
+                <path d="M 26 376 Q 22 376 22 380" stroke-width="2" stroke-linecap="round" />
+                <path d="M 54 376 Q 58 376 58 380" stroke-width="2" stroke-linecap="round" />
+                <path d="M 26 404 Q 22 404 22 400" stroke-width="2" stroke-linecap="round" />
+                <path d="M 54 404 Q 58 404 58 400" stroke-width="2" stroke-linecap="round" />
+                <circle cx="40" cy="390" r="3.5" fill="currentColor" />
+
+                <!-- Quatrefoil heart motif -->
+                <path d="M 40 450 Q 34 444 28 448 Q 25 453 28 458 Q 32 462 40 468" stroke-width="2.5"
+                    stroke-linecap="round" />
+                <path d="M 40 450 Q 46 444 52 448 Q 55 453 52 458 Q 48 462 40 468" stroke-width="2.5"
+                    stroke-linecap="round" />
+                <path d="M 28 444 L 30 438 L 35 442" stroke-width="2" stroke-linecap="round" />
+                <path d="M 52 444 L 50 438 L 45 442" stroke-width="2" stroke-linecap="round" />
+
+                <!-- Diamond lattice -->
+                <path d="M 40 520 L 50 530 L 40 540 L 30 530 Z" stroke-width="2.5" />
+                <path d="M 40 550 L 50 560 L 40 570 L 30 560 Z" stroke-width="2.5" />
+                <line x1="40" y1="540" x2="40" y2="550" stroke-width="2.2" />
+                <circle cx="40" cy="530" r="2" fill="currentColor" />
+                <circle cx="40" cy="560" r="2" fill="currentColor" />
+
+                <!-- Wave scroll border -->
+                <path d="M 20 620 Q 26 612 32 620 Q 40 630 48 620 Q 54 612 60 620" stroke-width="2.5"
+                    stroke-linecap="round" />
+                <circle cx="26" cy="616" r="1.5" fill="currentColor" />
+                <circle cx="54" cy="616" r="1.5" fill="currentColor" />
+
+                <!-- Bottom circular pattern -->
+                <circle cx="40" cy="700" r="22" stroke-width="2.8" />
+                <circle cx="40" cy="700" r="15" stroke-width="2.2" />
+                <circle cx="40" cy="700" r="8" stroke-width="1.8" />
+                <!-- Swirl petals -->
+                <path d="M 40 678 Q 36 674 40 670" stroke-width="2.2" stroke-linecap="round" />
+                <path d="M 40 722 Q 36 726 40 730" stroke-width="2.2" stroke-linecap="round" />
+                <path d="M 62 700 Q 66 696 70 700" stroke-width="2.2" stroke-linecap="round" />
+                <path d="M 18 700 Q 14 696 10 700" stroke-width="2.2" stroke-linecap="round" />
+                <circle cx="40" cy="700" r="3.5" fill="currentColor" />
+                <circle cx="40" cy="670" r="1.8" fill="currentColor" />
+                <circle cx="40" cy="730" r="1.8" fill="currentColor" />
+                <circle cx="70" cy="700" r="1.8" fill="currentColor" />
+                <circle cx="10" cy="700" r="1.8" fill="currentColor" />
+            </svg>
+        </div>
+
+        <!-- RIGHT HERO ORNAMENT: Mirror variation -->
+        <div class="hero-ornament hero-ornament--right" aria-hidden="true">
+            <svg viewBox="0 0 80 800" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
+                <!-- Top circular with cross -->
+                <circle cx="40" cy="40" r="18" stroke-width="2.5" />
+                <line x1="40" y1="26" x2="40" y2="54" stroke-width="2.5" />
+                <line x1="26" y1="40" x2="54" y2="40" stroke-width="2.5" />
+                <path d="M 26 26 Q 22 26 22 30" stroke-width="2.2" stroke-linecap="round" />
+                <path d="M 54 26 Q 58 26 58 30" stroke-width="2.2" stroke-linecap="round" />
+                <path d="M 26 54 Q 22 54 22 50" stroke-width="2.2" stroke-linecap="round" />
+                <path d="M 54 54 Q 58 54 58 50" stroke-width="2.2" stroke-linecap="round" />
+                <circle cx="40" cy="40" r="6" stroke-width="2" />
+                <circle cx="40" cy="40" r="2.5" fill="currentColor" />
+                <circle cx="12" cy="40" r="2" fill="currentColor" />
+                <circle cx="68" cy="40" r="2" fill="currentColor" />
+
+                <!-- Rosette with petals -->
+                <circle cx="40" cy="130" r="16" stroke-width="2.5" />
+                <circle cx="40" cy="130" r="10" stroke-width="2" />
+                <!-- Curved petals -->
+                <path d="M 40 114 Q 36 110 40 106" stroke-width="2.2" stroke-linecap="round" />
+                <path d="M 40 146 Q 36 150 40 154" stroke-width="2.2" stroke-linecap="round" />
+                <path d="M 56 130 Q 60 126 64 130" stroke-width="2.2" stroke-linecap="round" />
+                <path d="M 24 130 Q 20 126 16 130" stroke-width="2.2" stroke-linecap="round" />
+                <circle cx="40" cy="130" r="3.5" fill="currentColor" />
+                <circle cx="40" cy="106" r="1.5" fill="currentColor" />
+                <circle cx="64" cy="130" r="1.5" fill="currentColor" />
+
+                <!-- Heart scroll -->
+                <path d="M 40 190 Q 34 184 28 188 Q 24 193 28 200 Q 33 205 40 212" stroke-width="2.5"
+                    stroke-linecap="round" />
+                <path d="M 40 190 Q 46 184 52 188 Q 56 193 52 200 Q 47 205 40 212" stroke-width="2.5"
+                    stroke-linecap="round" />
+                <circle cx="30" cy="190" r="2" fill="currentColor" />
+                <circle cx="50" cy="190" r="2" fill="currentColor" />
+
+                <!-- Diamond chain -->
+                <path d="M 40 260 L 50 272 L 40 284 L 30 272 Z" stroke-width="2.5" />
+                <path d="M 40 294 L 50 306 L 40 318 L 30 306 Z" stroke-width="2.5" />
+                <line x1="40" y1="284" x2="40" y2="294" stroke-width="2.2" />
+                <circle cx="40" cy="272" r="2.5" fill="currentColor" />
+                <circle cx="40" cy="306" r="2.5" fill="currentColor" />
+
+                <!-- Spiral scrolls -->
+                <path d="M 25 360 Q 20 354 24 348 Q 30 346 35 352 Q 37 359 32 365" stroke-width="2.5"
+                    stroke-linecap="round" />
+                <path d="M 55 360 Q 60 354 56 348 Q 50 346 45 352 Q 43 359 48 365" stroke-width="2.5"
+                    stroke-linecap="round" />
+
+                <!-- Large central rosette -->
+                <circle cx="40" cy="430" r="22" stroke-width="2.8" />
+                <circle cx="40" cy="430" r="16" stroke-width="2.2" />
+                <circle cx="40" cy="430" r="10" stroke-width="1.8" />
+                <!-- 8-pointed pattern -->
+                <line x1="40" y1="412" x2="40" y2="448" stroke-width="2" />
+                <line x1="22" y1="430" x2="58" y2="430" stroke-width="2" />
+                <line x1="28" y1="418" x2="52" y2="442" stroke-width="1.8" />
+                <line x1="52" y1="418" x2="28" y2="442" stroke-width="1.8" />
+                <circle cx="40" cy="430" r="4" fill="currentColor" />
+
+                <!-- Quatrefoil -->
+                <path d="M 40 490 Q 35 484 30 488 Q 27 493 30 498 Q 34 502 40 508" stroke-width="2.5"
+                    stroke-linecap="round" />
+                <path d="M 40 490 Q 45 484 50 488 Q 53 493 50 498 Q 46 502 40 508" stroke-width="2.5"
+                    stroke-linecap="round" />
+
+                <!-- Diamond -->
+                <path d="M 40 550 L 52 564 L 40 578 L 28 564 Z" stroke-width="2.5" />
+                <line x1="40" y1="550" x2="40" y2="578" stroke-width="2" />
+                <line x1="28" y1="564" x2="52" y2="564" stroke-width="2" />
+                <circle cx="40" cy="564" r="3" fill="currentColor" />
+
+                <!-- Wave pattern -->
+                <path d="M 18 630 Q 24 622 30 630 Q 40 642 50 630 Q 56 622 62 630" stroke-width="2.5"
+                    stroke-linecap="round" />
+                <circle cx="24" cy="626" r="1.5" fill="currentColor" />
+                <circle cx="56" cy="626" r="1.5" fill="currentColor" />
+
+                <!-- Bottom sun spiral -->
+                <circle cx="40" cy="710" r="20" stroke-width="2.8" />
+                <circle cx="40" cy="710" r="14" stroke-width="2.2" />
+                <path d="M 40 710 Q 38 707 35 710 Q 35 713 38 716 Q 40 716 43 713 Q 43 710 40 710" fill="currentColor"
+                    stroke-width="2" />
+                <!-- Rays -->
+                <line x1="40" y1="690" x2="40" y2="682" stroke-width="2.5" />
+                <line x1="40" y1="730" x2="40" y2="738" stroke-width="2.5" />
+                <line x1="20" y1="710" x2="12" y2="710" stroke-width="2.5" />
+                <line x1="60" y1="710" x2="68" y2="710" stroke-width="2.5" />
+                <circle cx="40" cy="682" r="2" fill="currentColor" />
+                <circle cx="40" cy="738" r="2" fill="currentColor" />
+                <circle cx="12" cy="710" r="2" fill="currentColor" />
+                <circle cx="68" cy="710" r="2" fill="currentColor" />
+            </svg>
+        </div>
+        <div class="container">
+            <div class="hero__layout">
+                <div class="hero__image-wrapper">
+                    <img src="aigerim-photo.jpg" alt="Aigerim Turgunbaeva" class="hero__image">
+                </div>
+                <div class="hero__content">
+                    <h1 class="hero__name">
+                        <span>Aigerim</span>
+                        <span>Turgunbaeva</span>
+                    </h1>
+                    <div class="hero__title">
+                        <p>
+                            Independent journalist with 10+ years covering media repression, human rights,
+                            political transformation, and press freedom in Central Asia.
+                        </p>
+                        <p>
+                            Reuters contributor since 2021. Words in The Diplomat, Al Jazeera,
+                            The Guardian, Eurasianet, Global Voices, The National Interest, and CABAR.asia.
+                        </p>
+                        <p>
+                            Specialized in investigative and data-driven reporting on "legalized repression,"
+                            authoritarian trends, and independent media survival under legal and political pressure.
+                        </p>
+                    </div>
+                    <div class="hero__actions">
+                        <a href="#publications" class="btn btn--primary">Publications</a>
+                        <a href="#contact" class="btn btn--secondary">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- ORNAMENT #7: Media Top - Цветочно-завитковый -->
+    <div class="ornament-divider ornament-divider--7" aria-hidden="true">
+        <svg viewBox="0 0 800 80" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
+            <!-- Central flower with petals -->
+            <circle cx="400" cy="40" r="15" stroke-width="2.5" />
+
+            <!-- Flower petals -->
+            <path d="M 400 25 Q 395 20 400 15 Q 405 20 400 25" stroke-width="2" fill="currentColor" opacity="0.4" />
+            <path d="M 415 40 Q 420 35 425 40 Q 420 45 415 40" stroke-width="2" fill="currentColor" opacity="0.4" />
+            <path d="M 400 55 Q 395 60 400 65 Q 405 60 400 55" stroke-width="2" fill="currentColor" opacity="0.4" />
+            <path d="M 385 40 Q 380 35 375 40 Q 380 45 385 40" stroke-width="2" fill="currentColor" opacity="0.4" />
+
+            <!-- Diagonal petals -->
+            <path d="M 412 28 Q 417 23 420 26 Q 417 31 412 28" stroke-width="2" fill="currentColor" opacity="0.4" />
+            <path d="M 412 52 Q 417 57 420 54 Q 417 49 412 52" stroke-width="2" fill="currentColor" opacity="0.4" />
+            <path d="M 388 28 Q 383 23 380 26 Q 383 31 388 28" stroke-width="2" fill="currentColor" opacity="0.4" />
+            <path d="M 388 52 Q 383 57 380 54 Q 383 49 388 52" stroke-width="2" fill="currentColor" opacity="0.4" />
+
+            <!-- Left swirls with leaves -->
+            <path d="M 360 40 Q 350 30 340 35 Q 330 40 335 48" stroke-width="2.5" stroke-linecap="round" />
+            <path d="M 340 35 Q 337 32 340 28" stroke-width="2" stroke-linecap="round" />
+            <path d="M 335 48 Q 333 52 336 55" stroke-width="2" stroke-linecap="round" />
+
+            <path d="M 320 40 Q 310 32 300 36 Q 290 40 294 47" stroke-width="2.5" stroke-linecap="round" />
+            <path d="M 300 36 Q 298 33 300 30" stroke-width="2" stroke-linecap="round" />
+
+            <path d="M 280 40 Q 270 34 260 37 Q 250 40 253 46" stroke-width="2.5" stroke-linecap="round" />
+
+            <path d="M 240 40 Q 230 36 220 38 Q 210 40 212 45" stroke-width="2.5" stroke-linecap="round" />
+
+            <path d="M 200 40 Q 190 37 180 39 Q 175 40 176 44" stroke-width="2.5" stroke-linecap="round" />
+
+            <path d="M 160 40 Q 150 38 142 39 Q 138 40 139 43" stroke-width="2.5" stroke-linecap="round" />
+
+            <!-- Right swirls (mirror) -->
+            <path d="M 440 40 Q 450 30 460 35 Q 470 40 465 48" stroke-width="2.5" stroke-linecap="round" />
+            <path d="M 460 35 Q 463 32 460 28" stroke-width="2" stroke-linecap="round" />
+            <path d="M 465 48 Q 467 52 464 55" stroke-width="2" stroke-linecap="round" />
+
+            <path d="M 480 40 Q 490 32 500 36 Q 510 40 506 47" stroke-width="2.5" stroke-linecap="round" />
+            <path d="M 500 36 Q 502 33 500 30" stroke-width="2" stroke-linecap="round" />
+
+            <path d="M 520 40 Q 530 34 540 37 Q 550 40 547 46" stroke-width="2.5" stroke-linecap="round" />
+
+            <path d="M 560 40 Q 570 36 580 38 Q 590 40 588 45" stroke-width="2.5" stroke-linecap="round" />
+
+            <path d="M 600 40 Q 610 37 620 39 Q 625 40 624 44" stroke-width="2.5" stroke-linecap="round" />
+
+            <path d="M 640 40 Q 650 38 658 39 Q 662 40 661 43" stroke-width="2.5" stroke-linecap="round" />
+
+            <!-- Decorative dots -->
+            <circle cx="340" cy="35" r="2" fill="currentColor" />
+            <circle cx="460" cy="35" r="2" fill="currentColor" />
+            <circle cx="300" cy="36" r="2" fill="currentColor" />
+            <circle cx="500" cy="36" r="2" fill="currentColor" />
+        </svg>
+    </div>
+
+    <!-- Media Section -->
+    <section class="section" id="media">
+        <div class="container">
+            <div class="section__header reveal">
+                <p class="section__label section__label--large">Media</p>
+                <h2>Speaking & Interviews</h2>
+            </div>
+            <ul class="publications__list">
+                <li class="publication reveal">
+                    <a href="https://thediplomat.com/2026/01/kyrgyzstan-under-the-khanstitution-5-years-on"
+                        class="publication__link" target="_blank">Kyrgyzstan Under the Khanstitution: 5 Years On</a>
+                </li>
+                <li class="publication reveal">
+                    <a href="https://www.reuters.com/world/asia-pacific/top-eu-diplomat-visit-kyrgyzstan-talks-sanctions-2026-02-03"
+                        class="publication__link" target="_blank">Top EU diplomat to visit Kyrgyzstan for talks on
+                        sanctions</a>
+                </li>
+                <li class="publication reveal">
+                    <a href="https://thediplomat.com/2025/06/destruction-in-paradise-kyrgyzstans-ala-archa-national-park-under-siege"
+                        class="publication__link" target="_blank">Destruction in Paradise: Kyrgyzstan's Ala-Archa
+                        National Park Under Siege</a>
+                </li>
+                <li class="publication reveal">
+                    <a href="https://thediplomat.com/2025/02/shifting-gears-chinas-advanced-ev-hegemony-in-central-asia"
+                        class="publication__link" target="_blank">Shifting Gears: China's Advanced EV Hegemony in
+                        Central Asia</a>
+                </li>
+                <li class="publication reveal">
+                    <a href="https://thediplomat.com/2025/09/kloop-cameramen-sentenced-to-5-years-for-videos-they-didnt-make"
+                        class="publication__link" target="_blank">Kloop Cameramen Sentenced to 5 Years For Videos They
+                        Didn't Make</a>
+                </li>
+            </ul>
+            <button class="show-more-btn" id="showMoreBtn">Show 5 more interviews</button>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ORNAMENT #9: Contact Top - Большой торжественный -->
+    <div class="ornament-divider ornament-divider--9" aria-hidden="true">
+        <svg viewBox="0 0 800 100" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
+            <!-- Large central rosette -->
+            <circle cx="400" cy="50" r="28" stroke-width="3" />
+            <circle cx="400" cy="50" r="20" stroke-width="2.5" />
+            <circle cx="400" cy="50" r="12" stroke-width="2" />
+            <circle cx="400" cy="50" r="5" stroke-width="1.5" fill="currentColor" />
+
+            <!-- 8-pointed star inside -->
+            <line x1="400" y1="22" x2="400" y2="12" stroke-width="2.5" />
+            <line x1="400" y1="78" x2="400" y2="88" stroke-width="2.5" />
+            <line x1="428" y1="50" x2="438" y2="50" stroke-width="2.5" />
+            <line x1="372" y1="50" x2="362" y2="50" stroke-width="2.5" />
+            <line x1="420" y1="30" x2="428" y2="22" stroke-width="2.5" />
+            <line x1="380" y1="70" x2="372" y2="78" stroke-width="2.5" />
+            <line x1="420" y1="70" x2="428" y2="78" stroke-width="2.5" />
+            <line x1="380" y1="30" x2="372" y2="22" stroke-width="2.5" />
+
+            <!-- Large swirls on sides -->
+            <path d="M 340 50 Q 320 25 300 30 Q 280 35 270 20 Q 260 10 250 15" stroke-width="3"
+                stroke-linecap="round" />
+            <path d="M 340 50 Q 320 75 300 70 Q 280 65 270 80 Q 260 90 250 85" stroke-width="3"
+                stroke-linecap="round" />
+
+            <path d="M 230 20 Q 210 12 190 18 Q 170 24 160 15" stroke-width="3" stroke-linecap="round" />
+            <path d="M 230 80 Q 210 88 190 82 Q 170 76 160 85" stroke-width="3" stroke-linecap="round" />
+
+            <path d="M 140 20 Q 120 14 100 19 Q 85 23 75 16" stroke-width="3" stroke-linecap="round" />
+            <path d="M 140 80 Q 120 86 100 81 Q 85 77 75 84" stroke-width="3" stroke-linecap="round" />
+
+            <!-- Right swirls (mirror) -->
+            <path d="M 460 50 Q 480 25 500 30 Q 520 35 530 20 Q 540 10 550 15" stroke-width="3"
+                stroke-linecap="round" />
+            <path d="M 460 50 Q 480 75 500 70 Q 520 65 530 80 Q 540 90 550 85" stroke-width="3"
+                stroke-linecap="round" />
+
+            <path d="M 570 20 Q 590 12 610 18 Q 630 24 640 15" stroke-width="3" stroke-linecap="round" />
+            <path d="M 570 80 Q 590 88 610 82 Q 630 76 640 85" stroke-width="3" stroke-linecap="round" />
+
+            <path d="M 660 20 Q 680 14 700 19 Q 715 23 725 16" stroke-width="3" stroke-linecap="round" />
+            <path d="M 660 80 Q 680 86 700 81 Q 715 77 725 84" stroke-width="3" stroke-linecap="round" />
+
+            <!-- Diamonds accent -->
+            <path d="M 330 50 L 340 40 L 350 50 L 340 60 Z" stroke-width="2.5" />
+            <path d="M 470 50 L 460 40 L 450 50 L 460 60 Z" stroke-width="2.5" />
+
+            <!-- Large decorative dots -->
+            <circle cx="300" cy="30" r="3" fill="currentColor" />
+            <circle cx="300" cy="70" r="3" fill="currentColor" />
+            <circle cx="500" cy="30" r="3" fill="currentColor" />
+            <circle cx="500" cy="70" r="3" fill="currentColor" />
+            <circle cx="250" cy="15" r="2.5" fill="currentColor" />
+            <circle cx="250" cy="85" r="2.5" fill="currentColor" />
+            <circle cx="550" cy="15" r="2.5" fill="currentColor" />
+            <circle cx="550" cy="85" r="2.5" fill="currentColor" />
+        </svg>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="contact__layout">
+                <!-- Main Content: Top Left -->
+                <div class="contact__main reveal">
+                    <p class="section__label section__label--large">Contact</p>
+                    <h2 class="contact__title">Get in Touch</h2>
+                    <p class="contact__intro">
+                        Available for collaboration, expert commentary,<br>
+                        and research projects.
+                    </p>
+                </div>
+
+                <!-- All Contacts: Right Side -->
+                <div class="contact__links">
+                    <a href="mailto:turgunbaeva.aigi@gmail.com" class="contact__link">
+                        <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        <span>turgunbaeva.aigi@gmail.com</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/aigiturgunbaeva/" class="contact__link" target="_blank"
+                        rel="noopener">
+                        <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z" />
+                        </svg>
+                        <span>linkedin.com/in/aigiturgunbaeva</span>
+                    </a>
+                    <a href="tel:+996700257565" class="contact__link">
+                        <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path
+                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                        <span>+996 700 25 75 65</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p class="footer__copyright">© 2026 Aigerim Turgunbaeva</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const nav = document.getElementById('nav');
+
+        menuBtn.addEventListener('click', () => {
+            nav.classList.toggle('is-open');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.header__nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('is-open');
+            });
+        });
+    </script>
+
+    <!-- Articles Data -->
+    <script src="articles-data.js"></script>
+
+    <!-- Smooth Scroll -->
+    <script src="smooth-scroll.js"></script>
+
+</body>
+
+</html>
